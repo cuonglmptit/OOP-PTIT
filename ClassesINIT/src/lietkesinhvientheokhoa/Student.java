@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package lietkesinhvientheokhoa;
+
+/**
+ *
+ * @author cle13
+ */
+public class Student {
+    private String sID, name, sClass, email;
+
+    public Student(String sID, String name, String sClass, String email) {
+        this.sID = sID;
+        this.name = name;
+        this.sClass = sClass;
+        this.email = email;
+    }
+    public String getsClass(){
+        return this.sClass;
+    }
+    @Override
+    public String toString(){
+        return this.sID+" "+this.name+" "+this.sClass+" "+this.email;
+    }
+}
